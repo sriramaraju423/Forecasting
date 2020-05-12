@@ -1,18 +1,17 @@
-NN & SVM - black box techniques
-Sometimes we add Noise to increase the model's quality.
+Forecasting/Time-series:
+ACF: Combination correlation coffecient vs lag
+[-2(1/sqrt(n)),+2(1/sqrt(n))] - Range
+While splitting the data you shouldn't do random split
 
-Forecasting/Time-series analysis:
-Time series - Data associated with time
-Time series has 4 components:
-Systematic part: Level, trend, seasonal patterns
-Non systematic part: Noise
-Can be used as additive or multiplicative patterns
-Level: An average measure
-Trend: Persistant upward or downward path
-Seasonal: Regular pattern of up and down fluctuations
-Noise: Erractic, unsymetric, residual fluctuations. Due to random variation or unforseen events
-Additive seasonality - arthimetic progression
-multiplicative - Geometric progression
-Lag plot:
-We will plot original vs lagged one step and check for correlation.
-ACF plot: Takes multiple lag plots and takes it in a single visualization
+Even after forecasting with Naive ways we need to check error and see if there is any pattern in error. There should be no pattern
+Two popular mesures are RMSE and MAPE
+EDA for time-series: 
+Intercept will take care of nth factor
+sample n-1.
+For multiplicative seasonality coefficients take care of log value on right hand side.
+In forecasting we don't consider significant of coefficients.
+
+
+TODO:
+Why n-1?
+coefficients are significant?
