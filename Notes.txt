@@ -1,17 +1,7 @@
-Forecasting/Time-series:
-ACF: Combination correlation coffecient vs lag
-[-2(1/sqrt(n)),+2(1/sqrt(n))] - Range
-While splitting the data you shouldn't do random split
-
-Even after forecasting with Naive ways we need to check error and see if there is any pattern in error. There should be no pattern
-Two popular mesures are RMSE and MAPE
-EDA for time-series: 
-Intercept will take care of nth factor
-sample n-1.
-For multiplicative seasonality coefficients take care of log value on right hand side.
-In forecasting we don't consider significant of coefficients.
+For deseasoning data, we just fit a best fit line. For actual plot deseasoning, you need plot of Org vs LagM
+FOr detrending data, we plot diff measure of actual and 1lag.
+Double difference removes both seasonality and trend.
 
 
 TODO:
-Why n-1?
-coefficients are significant?
+Aukams razer rules of parsimony
